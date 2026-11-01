@@ -1,24 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <meta
-        http-equiv="refresh"
-        content="0; url=raw13/jb.html?log=1&hx1400=1&mem=2&v=12"
-    >
-
-    <title>PS4 14.00 Hx Test</title>
+    <!-- Pré-conexão ao caminho de destino reduz latência do redirect -->
+    <link rel="preconnect" href="/raw13/">
+    <meta http-equiv="refresh"
+          content="0; url=raw13/jb.html?log=1&hx1400=1&mem=2&v=12">
+    <meta name="referrer" content="no-referrer">
+    <title>Teste PS4 14.00 Hx</title>
+    <style>
+        /* Evita FOIC (flash of unstyled content) durante o redirect */
+        html, body { margin: 0; background: #000; color: #ccc;
+                     font-family: system-ui, sans-serif; }
+    </style>
 </head>
-
 <body>
     <script>
-        location.replace(
-            "raw13/jb.html?log=1&hx1400=1&mem=2&v=12"
-        );
+        /* Redireciona antes do paint — sem depender do meta refresh */
+        location.replace("raw13/jb.html?log=1&hx1400=1&mem=2&v=12");
     </script>
-
-    <p>
-        Opening PS4 14.00 Hx test...
-    </p>
+    <noscript>
+        <p>Ative o JavaScript ou abra
+           <a href="raw13/jb.html?log=1&hx1400=1&mem=2&v=12">este link</a>.
+        </p>
+    </noscript>
+    <p>Abrindo teste PS4 14.00 Hx…</p>
 </body>
 </html>
